@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Souhait</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h5>Vos coordonnées</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nom">Quel est votre nom ?</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Quel est votre prénom ?</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Quel est votre e-mail ?</label>
+                        <input type="email" class="form-control" id="email" placeholder="Entrez votre e-mail">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5>Votre souhait</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <p>Faites un souhait que vous voudriez voir exaucé :</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="souhait" id="riche" value="riche">
+                        <label class="form-check-label" for="riche">
+                            Être riche
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="souhait" id="celebre" value="celebre">
+                        <label class="form-check-label" for="celebre">
+                            Être célèbre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="souhait" id="intelligent" value="intelligent">
+                        <label class="form-check-label" for="intelligent">
+                            Être <strong>encore</strong> plus intelligent
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="souhait" id="autre" value="autre">
+                        <label class="form-check-label" for="autre">
+                            Autre...
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
